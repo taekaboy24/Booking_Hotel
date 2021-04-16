@@ -1,0 +1,18 @@
+<nav>
+    <div class="navigation">
+
+        <div class="nav-links">
+          <%= link_to t( 'navigation.Bookings'), bookings_path %>
+          <%= link_to t('navigation.Sign out'), destroy_user_session_path, method: :delete %>
+          <%= link_to  t('navigation.Sign up'), new_user_registration_path %>
+
+          <%= link_to  t('navigation.Sign in'), new_user_session_path %>
+
+          <%= link_to 'ENG', '?lang=en' %>
+          <%= link_to 'ES', '?lang=es' %>
+
+        </div>
+
+    </div>
+
+</nav>
